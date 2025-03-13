@@ -2,8 +2,8 @@ class Token:
     # Token types
     INTEGER, MUL, DIV, EOF = 'INTEGER', 'MUL', 'DIV', 'EOF'
 
-    def _init__(self, type, value):
-        self.type = type_
+    def __init__(self, type, value):
+        self.type = type
         self.value = value
 
     def __repr__(self):
@@ -101,5 +101,5 @@ def main():
             print(f'Error: {e}')
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
